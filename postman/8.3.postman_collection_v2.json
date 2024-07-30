@@ -1,0 +1,997 @@
+{
+	"info": {
+		"_postman_id": "4d2ae4ca-5488-43ac-afe2-7d80261e0731",
+		"name": "8.3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36149353"
+	},
+	"item": [
+		{
+			"name": "Resources",
+			"item": [
+				{
+					"name": "Singleton",
+					"item": [
+						{
+							"name": "Datafile",
+							"item": [
+								{
+									"name": "Read Datafile",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Ignition-API-Token",
+												"value": "{{api_token}}"
+											}
+										],
+										"url": "{{gateway_address}}/data/api/v1/resources/datafile/{{module_id}}/{{type_id}}/{{filename}}",
+										"description": "Reads a data file from the singleton resource of a specific type."
+									},
+									"response": []
+								},
+								{
+									"name": "Update Datafile",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Ignition-API-Token",
+												"value": "{{api_token}}"
+											}
+										],
+										"body": {
+											"mode": "file",
+											"file": {
+												"src": "/C:/Users/alu/Downloads/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar"
+											}
+										},
+										"url": {
+											"raw": "{{gateway_address}}/data/api/v1/resources/datafile/{{module_id}}/{{type_id}}/{{filename}}?signature={{signature}}",
+											"host": [
+												"{{gateway_address}}"
+											],
+											"path": [
+												"data",
+												"api",
+												"v1",
+												"resources",
+												"datafile",
+												"{{module_id}}",
+												"{{type_id}}",
+												"{{filename}}"
+											],
+											"query": [
+												{
+													"key": "signature",
+													"value": "{{signature}}"
+												},
+												{
+													"key": "rename",
+													"value": null,
+													"disabled": true
+												}
+											]
+										},
+										"description": "Reads a data file from a specific named resource."
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Datafile",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "X-Ignition-API-Token",
+												"value": "{{api_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{gateway_address}}/data/api/v1/resources/datafile/{{module_id}}/{{type_id}}/{{filename}}?signature={{signature}}",
+											"host": [
+												"{{gateway_address}}"
+											],
+											"path": [
+												"data",
+												"api",
+												"v1",
+												"resources",
+												"datafile",
+												"{{module_id}}",
+												"{{type_id}}",
+												"{{filename}}"
+											],
+											"query": [
+												{
+													"key": "signature",
+													"value": "{{signature}}"
+												}
+											]
+										},
+										"description": "Reads a data file from a specific named resource."
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Details",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let resp = pm.response.json();\r",
+											"pm.environment.set(\"signature\", resp.signature);"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{gateway_address}}/data/api/v1/resources/singleton/{{module_id}}/{{type_id}}?mode={{mode}}",
+									"host": [
+										"{{gateway_address}}"
+									],
+									"path": [
+										"data",
+										"api",
+										"v1",
+										"resources",
+										"singleton",
+										"{{module_id}}",
+										"{{type_id}}"
+									],
+									"query": [
+										{
+											"key": "mode",
+											"value": "{{mode}}"
+										}
+									]
+								},
+								"description": "Retrieves the singleton resource of a specific type and provides detailed information about its configuration and diagnostic state."
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Resource",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": "{{gateway_address}}/data/api/v1/resources/{{module_id}}/{{type_id}}/{{signature}}",
+								"description": "Deletes the singleton resource of a specific type."
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Non-singleton",
+					"item": [
+						{
+							"name": "Datafile",
+							"item": [
+								{
+									"name": "Read Datafile",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "X-Ignition-API-Token",
+												"value": "{{api_token}}"
+											}
+										],
+										"url": "{{gateway_address}}/data/api/v1/resources/datafile/{{module_id}}/{{type_id}}/{{name}}/{{filename}}",
+										"description": "Reads a data file from a specific named resource."
+									},
+									"response": []
+								},
+								{
+									"name": "Update Datafile",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Ignition-API-Token",
+												"value": "{{api_token}}"
+											}
+										],
+										"body": {
+											"mode": "file",
+											"file": {
+												"src": "postman-cloud:///1ef12267-541f-49d0-a1e0-3dfab9f968c8"
+											}
+										},
+										"url": {
+											"raw": "{{gateway_address}}/data/api/v1/resources/datafile/{{module_id}}/{{type_id}}/{{name}}/{{filename}}?signature={{signature}}",
+											"host": [
+												"{{gateway_address}}"
+											],
+											"path": [
+												"data",
+												"api",
+												"v1",
+												"resources",
+												"datafile",
+												"{{module_id}}",
+												"{{type_id}}",
+												"{{name}}",
+												"{{filename}}"
+											],
+											"query": [
+												{
+													"key": "signature",
+													"value": "{{signature}}"
+												},
+												{
+													"key": "rename",
+													"value": "mysql-connector-j-8.3.0-new-2.jar",
+													"disabled": true
+												}
+											]
+										},
+										"description": "Reads a data file from a specific named resource."
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Datafile",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "X-Ignition-API-Token",
+												"value": "{{api_token}}"
+											}
+										],
+										"url": {
+											"raw": "{{gateway_address}}/data/api/v1/resources/datafile/{{module_id}}/{{type_id}}/{{name}}/{{filename}}?signature={{signature}}",
+											"host": [
+												"{{gateway_address}}"
+											],
+											"path": [
+												"data",
+												"api",
+												"v1",
+												"resources",
+												"datafile",
+												"{{module_id}}",
+												"{{type_id}}",
+												"{{name}}",
+												"{{filename}}"
+											],
+											"query": [
+												{
+													"key": "signature",
+													"value": "{{signature}}"
+												}
+											]
+										},
+										"description": "Reads a data file from a specific named resource."
+									},
+									"response": []
+								}
+							],
+							"description": "Datafile routes only applicable to ignition/database-driver at the moment (JDBC drivers)."
+						},
+						{
+							"name": "List Details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": "{{gateway_address}}/data/api/v1/resources/list/{{module_id}}/{{type_id}}",
+								"description": "Retrieves all resources of a specific type and provides detailed information about each one's configuration and diagnostic state."
+							},
+							"response": []
+						},
+						{
+							"name": "List Details (filter param)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{gateway_address}}/data/api/v1/resources/list/{{module_id}}/{{type_id}}?name[sw]=postgres",
+									"host": [
+										"{{gateway_address}}"
+									],
+									"path": [
+										"data",
+										"api",
+										"v1",
+										"resources",
+										"list",
+										"{{module_id}}",
+										"{{type_id}}"
+									],
+									"query": [
+										{
+											"key": "name[sw]",
+											"value": "postgres"
+										},
+										{
+											"key": "offset",
+											"value": "0",
+											"disabled": true
+										},
+										{
+											"key": "mode",
+											"value": "dev",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves all resources of a specific type and provides detailed information about each one's configuration and diagnostic state."
+							},
+							"response": []
+						},
+						{
+							"name": "List Names",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": "{{gateway_address}}/data/api/v1/resources/names/{{module_id}}/{{type_id}}",
+								"description": "Retrieves the names and enabled-state of resources of a specific type."
+							},
+							"response": []
+						},
+						{
+							"name": "List Names (filter param)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{gateway_address}}/data/api/v1/resources/names/{{module_id}}/{{type_id}}?name[sw]=test&offset=0&sortBy=desc(name)&limit=-1",
+									"host": [
+										"{{gateway_address}}"
+									],
+									"path": [
+										"data",
+										"api",
+										"v1",
+										"resources",
+										"names",
+										"{{module_id}}",
+										"{{type_id}}"
+									],
+									"query": [
+										{
+											"key": "name[sw]",
+											"value": "test"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "sortBy",
+											"value": "desc(name)"
+										},
+										{
+											"key": "limit",
+											"value": "-1"
+										}
+									]
+								},
+								"description": "Retrieves the names and enabled-state of resources of a specific type."
+							},
+							"response": []
+						},
+						{
+							"name": "Find Resource",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let resp = pm.response.json();\r",
+											"pm.environment.set(\"signature\", resp.signature);\r",
+											"// pm.environment.set(\"config\", JSON.stringify(resp.config));"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{gateway_address}}/data/api/v1/resources/find/{{module_id}}/{{type_id}}/{{name}}",
+									"host": [
+										"{{gateway_address}}"
+									],
+									"path": [
+										"data",
+										"api",
+										"v1",
+										"resources",
+										"find",
+										"{{module_id}}",
+										"{{type_id}}",
+										"{{name}}"
+									],
+									"query": [
+										{
+											"key": "mode",
+											"value": "test",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Retrieves a single resource (specified by name) of a specific type and provides detailed information about its configuration and diagnostic state."
+							},
+							"response": []
+						},
+						{
+							"name": "Rename",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"// rename = \"test\"+pm.variables.replaceIn('{{$randomInt}}')\r",
+											"// pm.environment.set(\"rename\", rename)"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"if (pm.response.code==200 && pm.response.json().success==true) {\r",
+											"    pm.environment.set(\"name\", pm.environment.get(\"rename\"));\r",
+											"}"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"{{rename}}\",\r\n  \"confirm\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gateway_address}}/data/api/v1/resources/rename/{{module_id}}/{{type_id}}/{{name}}",
+									"host": [
+										"{{gateway_address}}"
+									],
+									"path": [
+										"data",
+										"api",
+										"v1",
+										"resources",
+										"rename",
+										"{{module_id}}",
+										"{{type_id}}",
+										"{{name}}"
+									],
+									"query": [
+										{
+											"key": "mode",
+											"value": "test",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Renames a specific resource."
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": {
+									"raw": "{{gateway_address}}/data/api/v1/resources/{{module_id}}/{{type_id}}/{{name}}/{{signature}}",
+									"host": [
+										"{{gateway_address}}"
+									],
+									"path": [
+										"data",
+										"api",
+										"v1",
+										"resources",
+										"{{module_id}}",
+										"{{type_id}}",
+										"{{name}}",
+										"{{signature}}"
+									],
+									"query": [
+										{
+											"key": "mode",
+											"value": "test",
+											"disabled": true
+										},
+										{
+											"key": "confirm",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Deletes a single named resource of a specific type."
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Multiple",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"// console.info(pm.environment.get(\"payload_delete_multiple\"))\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Ignition-API-Token",
+										"value": "{{api_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{{payload_delete_multiple}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gateway_address}}/data/api/v1/resources/delete/{{module_id}}/{{type_id}}",
+									"host": [
+										"{{gateway_address}}"
+									],
+									"path": [
+										"data",
+										"api",
+										"v1",
+										"resources",
+										"delete",
+										"{{module_id}}",
+										"{{type_id}}"
+									],
+									"query": [
+										{
+											"key": "confirm",
+											"value": "true",
+											"disabled": true
+										}
+									]
+								},
+								"description": "Deletes multiple named resources of a specific type."
+							},
+							"response": []
+						}
+					],
+					"description": "Routes contained apply to non-singleton resource types (ie. Named Resources and Extension Points)"
+				},
+				{
+					"name": "Describe Type",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": "{{gateway_address}}/data/api/v1/resources/type/{{module_id}}/{{type_id}}",
+						"description": "Describes the resource type itself."
+					},
+					"response": []
+				},
+				{
+					"name": "Create Resources",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{{payload_create}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{gateway_address}}/data/api/v1/resources/{{module_id}}/{{type_id}}",
+						"description": "Creates new resources of a specific type."
+					},
+					"response": []
+				},
+				{
+					"name": "Modify Resources",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{{payload_modify}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{gateway_address}}/data/api/v1/resources/{{module_id}}/{{type_id}}",
+						"description": "Modifies one or more resources of a specific type."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deployment Modes",
+			"item": [
+				{
+					"name": "List Deployment Modes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": "{{gateway_address}}/data/api/v1/mode",
+						"description": "Provides all deployment modes that are defined."
+					},
+					"response": []
+				},
+				{
+					"name": "Create Deployment Mode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{{payload_create}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{gateway_address}}/data/api/v1/mode",
+						"description": "Provides all deployment modes that are defined."
+					},
+					"response": []
+				},
+				{
+					"name": "Update Deployment Mode",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{{payload_modify}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{gateway_address}}/data/api/v1/mode/{{name}}",
+						"description": "Provides all deployment modes that are defined."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Deployment Mode",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{gateway_address}}/data/api/v1/mode/{{name}}",
+						"description": "Provides all deployment modes that are defined."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sync",
+			"item": [
+				{
+					"name": "Config Sync Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": "{{gateway_address}}/data/api/v1/sync/config",
+						"description": "Provides information about the most recent sync operation for the config resource collections."
+					},
+					"response": []
+				},
+				{
+					"name": "Config Sync Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": "{{gateway_address}}/data/api/v1/sync/config",
+						"description": "Request that a sync is performed of the config resource collections."
+					},
+					"response": []
+				},
+				{
+					"name": "Project Sync Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": "{{gateway_address}}/data/api/v1/sync/projects",
+						"description": "Provides information about the most recent sync operation for the projects."
+					},
+					"response": []
+				},
+				{
+					"name": "Project Sync Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": "{{gateway_address}}/data/api/v1/sync/projects",
+						"description": "Request that a sync is performed of all projects."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Backup and Restore",
+			"item": [
+				{
+					"name": "Get backup gwbk",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{gateway_address}}/data/api/v1/backup?type=roaming",
+							"host": [
+								"{{gateway_address}}"
+							],
+							"path": [
+								"data",
+								"api",
+								"v1",
+								"backup"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "roaming",
+									"description": "Set value to \"roaming\" or \"all\""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restore gwbk",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Ignition-API-Token",
+								"value": "{{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": ""
+							}
+						},
+						"url": {
+							"raw": "{{gateway_address}}/data/api/v1/backup",
+							"host": [
+								"{{gateway_address}}"
+							],
+							"path": [
+								"data",
+								"api",
+								"v1",
+								"backup"
+							],
+							"query": [
+								{
+									"key": "restoreDisabled",
+									"value": "true",
+									"description": "Enable the key to restore all config in a disabled state",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "- Taking a backup gwbk: the type parameter must be set to \"roaming\" or \"all\".\n    \n- Restoring a gwbk: you have to navigate to the \"body\" tab, select the \"binary\" option, and then select the GWBK file."
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "gateway_address",
+			"value": "http://localhost:8088",
+			"type": "string"
+		},
+		{
+			"key": "api_token",
+			"value": "**Replace with your token**",
+			"type": "string"
+		}
+	]
+}
