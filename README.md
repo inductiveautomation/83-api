@@ -1,6 +1,6 @@
 # Postman Collection and Environment Configs for 8.3 API Testing
 
-For more detailed and up-to-date info - [[Ignition 8.3 Early Access] 8.3 API - Postman Config](https://forum.inductiveautomation.com/t/8-3-api-postman-config-github/93935)
+For more detailed and up-to-date info - [[Ignition 8.3 Early Access] Ignition 8.3 API Usage Guide (via Postman)](https://forum.inductiveautomation.com/t/93935)
 
 Collection and environment configs for the new 8.3 API routes can be imported in Postman for testing.
 
