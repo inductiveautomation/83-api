@@ -32,6 +32,20 @@
 								},
 								{
 									"name": "Update Datafile",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"// Update signature variable with newSignature from change\r",
+													"let resp = pm.response.json();\r",
+													"pm.environment.set(\"signature\", resp.changes[0].newSignature);"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
 									"request": {
 										"method": "POST",
 										"header": [
@@ -225,6 +239,20 @@
 								},
 								{
 									"name": "Update Datafile",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"// Update signature variable with newSignature from change\r",
+													"let resp = pm.response.json();\r",
+													"pm.environment.set(\"signature\", resp.changes[0].newSignature);"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
 									"request": {
 										"method": "POST",
 										"header": [
@@ -504,7 +532,10 @@
 										"exec": [
 											"if (pm.response.code==200 && pm.response.json().success==true) {\r",
 											"    pm.environment.set(\"name\", pm.environment.get(\"rename\"));\r",
-											"}"
+											"}\r",
+											"// Update signature variable with newSignature from change\r",
+											"let resp = pm.response.json();\r",
+											"pm.environment.set(\"signature\", resp.changes[0].newSignature);"
 										],
 										"type": "text/javascript",
 										"packages": {}
@@ -521,7 +552,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"{{rename}}\",\r\n  \"confirm\": false\r\n}",
+									"raw": "{\r\n  \"name\": \"{{rename}}\",\r\n  \"references\": \"ABORT\"     // If unspecified, ABORT is default. Other options: IGNORE, UPDATE\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -675,6 +706,20 @@
 				},
 				{
 					"name": "Create Resources",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Update signature variable with newSignature from change\r",
+									"let resp = pm.response.json();\r",
+									"pm.environment.set(\"signature\", resp.changes[0].newSignature);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -699,6 +744,20 @@
 				},
 				{
 					"name": "Modify Resources",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Update signature variable with newSignature from change\r",
+									"let resp = pm.response.json();\r",
+									"pm.environment.set(\"signature\", resp.changes[0].newSignature);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "PUT",
 						"header": [
