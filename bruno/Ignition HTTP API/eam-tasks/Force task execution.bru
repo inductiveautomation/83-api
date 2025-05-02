@@ -1,0 +1,20 @@
+meta {
+  name: Force task execution
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/data/eam/api/v1/eam-tasks/force/:owner/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~retry: 
+}
+
+params:path {
+  owner: 
+  name: 
+}

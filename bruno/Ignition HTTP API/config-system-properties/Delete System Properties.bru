@@ -1,0 +1,19 @@
+meta {
+  name: Delete System Properties
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/system-properties/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  signature: 
+}

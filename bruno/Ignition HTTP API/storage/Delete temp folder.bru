@@ -1,0 +1,15 @@
+meta {
+  name: Delete temp folder
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/data/eam/api/v1/eam-tasks/delete-temp-folder
+  body: none
+  auth: none
+}
+
+params:query {
+  folderPath: 
+}

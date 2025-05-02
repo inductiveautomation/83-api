@@ -1,0 +1,18 @@
+meta {
+  name: Acquire Configuration Scan Lock
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/scan-lock/config
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "acquireTimeout": "",
+    "holdTimeout": ""
+  }
+}

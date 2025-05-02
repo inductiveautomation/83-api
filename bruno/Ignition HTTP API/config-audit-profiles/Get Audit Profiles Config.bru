@@ -1,0 +1,19 @@
+meta {
+  name: Get Audit Profiles Config
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/find/ignition/audit-profile/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}

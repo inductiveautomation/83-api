@@ -1,0 +1,16 @@
+meta {
+  name: Get chart detail
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/sfc/api/v1/charts/:projectName/:chartPath
+  body: none
+  auth: none
+}
+
+params:path {
+  projectName: 
+  chartPath: 
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Modify EAM Agent Task
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/eam-tasks
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

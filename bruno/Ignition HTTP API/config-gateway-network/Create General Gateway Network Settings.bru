@@ -1,0 +1,23 @@
+meta {
+  name: Create General Gateway Network Settings
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

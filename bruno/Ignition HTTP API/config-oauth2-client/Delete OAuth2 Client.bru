@@ -1,0 +1,21 @@
+meta {
+  name: Delete OAuth2 Client
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/oauth2-client/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

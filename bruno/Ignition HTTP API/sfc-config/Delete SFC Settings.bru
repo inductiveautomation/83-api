@@ -1,0 +1,19 @@
+meta {
+  name: Delete SFC Settings
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.sfc/chart-settings/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  signature: 
+}

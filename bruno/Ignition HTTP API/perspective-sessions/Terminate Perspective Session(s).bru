@@ -1,0 +1,16 @@
+meta {
+  name: Terminate Perspective Session(s)
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/data/perspective/api/v1/sessions
+  body: none
+  auth: none
+}
+
+params:query {
+  sessionId: 
+  ~message: 
+}

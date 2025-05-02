@@ -1,0 +1,19 @@
+meta {
+  name: Currently Executing Reports
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/data/reporting/api/v1/reports/current
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Resume Task Queue
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/gateway-network/resumeQueue/:serverId/:queueId
+  body: none
+  auth: none
+}
+
+params:path {
+  serverId: 
+  queueId: 
+}

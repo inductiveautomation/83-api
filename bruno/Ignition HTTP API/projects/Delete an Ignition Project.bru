@@ -1,0 +1,19 @@
+meta {
+  name: Delete an Ignition Project
+  type: http
+  seq: 12
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/projects/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~confirm: 
+}
+
+params:path {
+  name: 
+}

@@ -1,0 +1,42 @@
+meta {
+  name: Create JDBC Driver
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/database-driver
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "type": "",
+        "defaultTranslator": "",
+        "classname": "",
+        "urlFormat": "",
+        "urlInstructions": "",
+        "defaultProps": "",
+        "defaultPropInstructions": "",
+        "defaultValidationQuery": ""
+      },
+      "backupConfig": {
+        "type": "",
+        "defaultTranslator": "",
+        "classname": "",
+        "urlFormat": "",
+        "urlInstructions": "",
+        "defaultProps": "",
+        "defaultPropInstructions": "",
+        "defaultValidationQuery": ""
+      }
+    }
+  ]
+}

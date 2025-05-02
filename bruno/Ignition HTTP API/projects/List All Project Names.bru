@@ -1,0 +1,19 @@
+meta {
+  name: List All Project Names
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/projects/names
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

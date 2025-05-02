@@ -1,0 +1,21 @@
+meta {
+  name: Delete Schedule
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/schedule/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

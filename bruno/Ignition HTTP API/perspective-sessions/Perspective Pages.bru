@@ -1,0 +1,23 @@
+meta {
+  name: Perspective Pages
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/data/perspective/api/v1/session/:sessionId/pages
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  sessionId: 
+}

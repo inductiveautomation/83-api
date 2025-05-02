@@ -1,0 +1,19 @@
+meta {
+  name: Delete Security Levels
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/security-levels/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  signature: 
+}

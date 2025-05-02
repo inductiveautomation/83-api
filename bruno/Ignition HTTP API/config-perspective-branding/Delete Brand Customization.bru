@@ -1,0 +1,19 @@
+meta {
+  name: Delete Brand Customization
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/cobranding/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  signature: 
+}

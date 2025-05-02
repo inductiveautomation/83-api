@@ -1,0 +1,15 @@
+meta {
+  name: OPC Server Connection Diagnostics
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/opc-ua/api/v1/diagnostics/:connectionName/server
+  body: none
+  auth: none
+}
+
+params:path {
+  connectionName: 
+}

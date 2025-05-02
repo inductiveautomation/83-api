@@ -1,0 +1,21 @@
+meta {
+  name: Delete Historian
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.historian/historian-provider/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Modify Gateway Homepage Notes
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/homepage-notes
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "notes": ""
+      },
+      "backupConfig": {
+        "notes": ""
+      }
+    }
+  ]
+}

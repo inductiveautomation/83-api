@@ -1,0 +1,24 @@
+meta {
+  name: Browse OPC-COM Servers
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/com.inductiveautomation.opccom/api/v1/browse-servers/:type
+  body: none
+  auth: none
+}
+
+params:query {
+  ~address: 
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  type: 
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Add Logger Context Property
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/logs/properties/:key
+  body: none
+  auth: none
+}
+
+params:query {
+  value: 
+  ~level: 
+}
+
+params:path {
+  key: 
+}

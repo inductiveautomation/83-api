@@ -1,0 +1,19 @@
+meta {
+  name: Set Logger Level
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/logs/loggers/:loggerName
+  body: none
+  auth: none
+}
+
+params:query {
+  level: 
+}
+
+params:path {
+  loggerName: 
+}

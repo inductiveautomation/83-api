@@ -1,0 +1,26 @@
+meta {
+  name: Rename Historian
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/rename/com.inductiveautomation.historian/historian-provider/:name
+  body: json
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}
+
+body:json {
+  {
+    "name": "",
+    "references": ""
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Modify Project
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/projects/:name
+  body: json
+  auth: none
+}
+
+params:path {
+  name: 
+}

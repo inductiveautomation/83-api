@@ -1,0 +1,24 @@
+meta {
+  name: Create Roster
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/roster-config
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

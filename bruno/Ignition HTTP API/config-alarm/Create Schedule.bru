@@ -1,0 +1,24 @@
+meta {
+  name: Create Schedule
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/schedule
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

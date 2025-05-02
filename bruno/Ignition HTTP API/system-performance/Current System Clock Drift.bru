@@ -1,0 +1,11 @@
+meta {
+  name: Current System Clock Drift
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/systemPerformance/driftGauge
+  body: none
+  auth: none
+}

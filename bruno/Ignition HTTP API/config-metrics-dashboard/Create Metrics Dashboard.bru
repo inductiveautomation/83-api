@@ -1,0 +1,56 @@
+meta {
+  name: Create Metrics Dashboard
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/metrics-dashboard
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "grid": {
+          "rows": "",
+          "columns": ""
+        },
+        "widgets": [
+          {
+            "id": "",
+            "position": {
+              "columnEnd": "",
+              "columnStart": "",
+              "rowEnd": "",
+              "rowStart": ""
+            }
+          }
+        ]
+      },
+      "backupConfig": {
+        "grid": {
+          "rows": "",
+          "columns": ""
+        },
+        "widgets": [
+          {
+            "id": "",
+            "position": {
+              "columnEnd": "",
+              "columnStart": "",
+              "rowEnd": "",
+              "rowStart": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

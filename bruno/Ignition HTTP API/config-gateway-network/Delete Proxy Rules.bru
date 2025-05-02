@@ -1,0 +1,19 @@
+meta {
+  name: Delete Proxy Rules
+  type: http
+  seq: 12
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-proxy-rules/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  signature: 
+}

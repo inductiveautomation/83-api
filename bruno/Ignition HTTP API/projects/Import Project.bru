@@ -1,0 +1,19 @@
+meta {
+  name: Import Project
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/projects/import/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~overwrite: 
+}
+
+params:path {
+  name: 
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Modify Edge System Properties
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/edge-system-properties
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

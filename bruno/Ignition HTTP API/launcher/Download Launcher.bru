@@ -1,0 +1,17 @@
+meta {
+  name: Download Launcher
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/launcher/download/:type/:os/:arch
+  body: none
+  auth: none
+}
+
+params:path {
+  type: 
+  os: 
+  arch: 
+}

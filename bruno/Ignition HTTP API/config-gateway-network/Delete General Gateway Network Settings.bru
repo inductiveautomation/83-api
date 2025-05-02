@@ -1,0 +1,19 @@
+meta {
+  name: Delete General Gateway Network Settings
+  type: http
+  seq: 18
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-settings/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  signature: 
+}

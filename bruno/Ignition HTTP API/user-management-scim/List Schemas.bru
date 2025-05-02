@@ -1,0 +1,16 @@
+meta {
+  name: List Schemas
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/Schemas
+  body: none
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+}

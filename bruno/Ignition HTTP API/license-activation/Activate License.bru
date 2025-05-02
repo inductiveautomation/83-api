@@ -1,0 +1,15 @@
+meta {
+  name: Activate License
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/activation/activate/:key
+  body: none
+  auth: none
+}
+
+params:path {
+  key: 
+}

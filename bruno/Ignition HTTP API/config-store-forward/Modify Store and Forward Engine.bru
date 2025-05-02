@@ -1,0 +1,71 @@
+meta {
+  name: Modify Store and Forward Engine
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/store-and-forward-engine
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "timeThresholdMs": "",
+        "forwardRateMs": "",
+        "forwardingPolicy": "",
+        "forwardingSchedule": "",
+        "isThirdParty": "",
+        "dataThreshold": "",
+        "batchSize": "",
+        "scanRateMs": "",
+        "primaryMaintenancePolicy": {
+          "action": "",
+          "limit": {
+            "limitType": "",
+            "value": ""
+          }
+        },
+        "secondaryMaintenancePolicy": {
+          "action": "",
+          "limit": {
+            "limitType": "",
+            "value": ""
+          }
+        }
+      },
+      "backupConfig": {
+        "timeThresholdMs": "",
+        "forwardRateMs": "",
+        "forwardingPolicy": "",
+        "forwardingSchedule": "",
+        "isThirdParty": "",
+        "dataThreshold": "",
+        "batchSize": "",
+        "scanRateMs": "",
+        "primaryMaintenancePolicy": {
+          "action": "",
+          "limit": {
+            "limitType": "",
+            "value": ""
+          }
+        },
+        "secondaryMaintenancePolicy": {
+          "action": "",
+          "limit": {
+            "limitType": "",
+            "value": ""
+          }
+        }
+      }
+    }
+  ]
+}

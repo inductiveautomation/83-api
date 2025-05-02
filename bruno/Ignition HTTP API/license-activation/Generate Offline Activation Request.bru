@@ -1,0 +1,15 @@
+meta {
+  name: Generate Offline Activation Request
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/activation/offline/activate-request/:key
+  body: none
+  auth: none
+}
+
+params:path {
+  key: 
+}

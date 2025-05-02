@@ -1,0 +1,21 @@
+meta {
+  name: Delete JDBC Driver Data File
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/datafile/ignition/database-driver/:name/:filename
+  body: none
+  auth: none
+}
+
+params:query {
+  signature: 
+  ~collection: 
+}
+
+params:path {
+  name: 
+  filename: 
+}

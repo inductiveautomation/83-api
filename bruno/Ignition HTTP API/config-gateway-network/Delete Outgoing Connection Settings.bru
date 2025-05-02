@@ -1,0 +1,21 @@
+meta {
+  name: Delete Outgoing Connection Settings
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-outgoing/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

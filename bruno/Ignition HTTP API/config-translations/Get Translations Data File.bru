@@ -1,0 +1,19 @@
+meta {
+  name: Get Translations Data File
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/datafile/ignition/translations/:filename
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  filename: 
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Delete Holiday
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/holiday/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

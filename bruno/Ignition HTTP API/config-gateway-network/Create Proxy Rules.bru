@@ -1,0 +1,23 @@
+meta {
+  name: Create Proxy Rules
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-proxy-rules
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

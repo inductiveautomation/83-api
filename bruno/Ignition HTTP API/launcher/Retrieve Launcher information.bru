@@ -1,0 +1,17 @@
+meta {
+  name: Retrieve Launcher information
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/launcher/info/:type/:os/:arch
+  body: none
+  auth: none
+}
+
+params:path {
+  type: 
+  os: 
+  arch: 
+}

@@ -1,0 +1,38 @@
+meta {
+  name: Update Redundancy Config
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/redundancy/config
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "gatewayNetworkSetup": {
+      "host": "",
+      "port": "",
+      "enableSsl": "",
+      "pingRate": "",
+      "pingTimeout": "",
+      "pingMaxMissed": "",
+      "websocketTimeout": "",
+      "httpConnectTimeout": "",
+      "httpReadTimeout": "",
+      "sendThreads": "",
+      "receiveThreads": ""
+    },
+    "activeHistoryLevel": "",
+    "joinWaitTime": "",
+    "role": "",
+    "standbyActivityLevel": "",
+    "syncTimoutSecs": "",
+    "autoDetectLocal": "",
+    "localInterface": "",
+    "masterRecoveryMode": "",
+    "useActiveUptimeToResolveConflict": ""
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: OPC Server Connection Session Diagnostics
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/data/opc-ua/api/v1/diagnostics/:connectionName/sessions
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  connectionName: 
+}

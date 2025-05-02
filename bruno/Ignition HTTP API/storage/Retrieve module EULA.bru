@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve module EULA
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/eam/api/v1/eam-tasks/module-eula
+  body: none
+  auth: none
+}
+
+params:query {
+  filePath: 
+}

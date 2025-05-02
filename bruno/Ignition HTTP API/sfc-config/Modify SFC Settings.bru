@@ -1,0 +1,34 @@
+meta {
+  name: Modify SFC Settings
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.sfc/chart-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "chartRecordingEnabled": "",
+        "recordingsPerChart": "",
+        "pruneAge": "",
+        "pruneAgeUnits": ""
+      },
+      "backupConfig": {
+        "chartRecordingEnabled": "",
+        "recordingsPerChart": "",
+        "pruneAge": "",
+        "pruneAgeUnits": ""
+      }
+    }
+  ]
+}

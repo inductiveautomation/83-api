@@ -1,0 +1,25 @@
+meta {
+  name: Modify API Token
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/api-token
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

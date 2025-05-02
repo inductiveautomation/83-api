@@ -1,0 +1,19 @@
+meta {
+  name: Get Holiday Config
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/find/ignition/holiday/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}

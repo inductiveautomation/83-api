@@ -1,0 +1,24 @@
+meta {
+  name: Create Alarm Journal Settings
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/alarm-journal
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

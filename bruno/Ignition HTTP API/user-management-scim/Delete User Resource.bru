@@ -1,0 +1,17 @@
+meta {
+  name: Delete User Resource
+  type: http
+  seq: 15
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/Users/:user-id
+  body: none
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+  user-id: 
+}

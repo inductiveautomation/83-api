@@ -1,0 +1,62 @@
+meta {
+  name: Modify Module Settings
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/module-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "installMode": "",
+        "controllerSettings": {
+          "eventTableName": "",
+          "archiveLocationMode": "",
+          "archivePath": "",
+          "lowDiskThresholdMB": "",
+          "datasource": "",
+          "maxRetainedBackupCount": "",
+          "backupRetentionAge": "",
+          "backupRetentionTimeUnit": ""
+        },
+        "agentSettings": {
+          "controllerServerId": "",
+          "sendStatsInterval": "",
+          "httpConnectTimeout": "",
+          "httpReadTimeout": "",
+          "forwardLeasedLicense": ""
+        }
+      },
+      "backupConfig": {
+        "installMode": "",
+        "controllerSettings": {
+          "eventTableName": "",
+          "archiveLocationMode": "",
+          "archivePath": "",
+          "lowDiskThresholdMB": "",
+          "datasource": "",
+          "maxRetainedBackupCount": "",
+          "backupRetentionAge": "",
+          "backupRetentionTimeUnit": ""
+        },
+        "agentSettings": {
+          "controllerServerId": "",
+          "sendStatsInterval": "",
+          "httpConnectTimeout": "",
+          "httpReadTimeout": "",
+          "forwardLeasedLicense": ""
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+meta {
+  name: Create Keyboard Layouts
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/keyboard_layout
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "alias": "",
+        "id": "",
+        "labels": {
+          "ALPHABET_LAYOUT": "",
+          "BACKSPACE": "",
+          "CANCEL": "",
+          "CAPSLOCK": "",
+          "NUMERIC_LAYOUT": "",
+          "SHIFT": "",
+          "SPACE": "",
+          "SUBMIT": ""
+        },
+        "name": "",
+        "rows": [],
+        "supportedLanguages": [],
+        "title": ""
+      },
+      "backupConfig": {
+        "alias": "",
+        "id": "",
+        "labels": {
+          "ALPHABET_LAYOUT": "",
+          "BACKSPACE": "",
+          "CANCEL": "",
+          "CAPSLOCK": "",
+          "NUMERIC_LAYOUT": "",
+          "SHIFT": "",
+          "SPACE": "",
+          "SUBMIT": ""
+        },
+        "name": "",
+        "rows": [],
+        "supportedLanguages": [],
+        "title": ""
+      }
+    }
+  ]
+}

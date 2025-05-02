@@ -1,0 +1,11 @@
+meta {
+  name: Check Gateway Online Status
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/activation/is-online
+  body: none
+  auth: none
+}

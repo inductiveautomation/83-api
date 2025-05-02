@@ -1,0 +1,16 @@
+meta {
+  name: List User Resources
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/Users
+  body: none
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Diagnostic Ping
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/gateway-network/diagnostics/testConnectionToServer/:serverId
+  body: none
+  auth: none
+}
+
+params:path {
+  serverId: 
+}

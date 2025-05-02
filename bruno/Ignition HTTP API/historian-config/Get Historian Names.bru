@@ -1,0 +1,19 @@
+meta {
+  name: Get Historian Names
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/names/com.inductiveautomation.historian/historian-provider
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

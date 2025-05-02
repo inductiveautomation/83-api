@@ -1,0 +1,31 @@
+meta {
+  name: Modify Incoming Connection Settings
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-incoming
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "connectionId": "",
+        "securityStatus": ""
+      },
+      "backupConfig": {
+        "connectionId": "",
+        "securityStatus": ""
+      }
+    }
+  ]
+}

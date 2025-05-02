@@ -1,0 +1,11 @@
+meta {
+  name: Get all required restart tasks
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/restart-tasks/pending
+  body: none
+  auth: none
+}

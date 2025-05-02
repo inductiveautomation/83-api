@@ -1,0 +1,21 @@
+meta {
+  name: Delete Resources.TagProvider
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/tag-provider/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Modify Queue Settings
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-queue-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

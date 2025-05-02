@@ -1,0 +1,30 @@
+meta {
+  name: Create Holiday
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/holiday
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "date": "",
+        "repeatAnnually": ""
+      },
+      "backupConfig": {
+        "date": "",
+        "repeatAnnually": ""
+      }
+    }
+  ]
+}

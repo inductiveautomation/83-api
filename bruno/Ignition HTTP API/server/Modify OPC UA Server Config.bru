@@ -1,0 +1,108 @@
+meta {
+  name: Modify OPC UA Server Config
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.opcua/server-config
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "endpoint": {
+          "bindPort": "",
+          "bindAddresses": [],
+          "endpointAddresses": [],
+          "securityPolicies": [],
+          "messageSecurityModes": []
+        },
+        "authentication": {
+          "anonymousAccessAllowed": "",
+          "authenticationProfile": ""
+        },
+        "accessControl": {
+          "defaultDeviceRolePermissionMappings": [
+            {
+              "role": "",
+              "permissions": []
+            }
+          ],
+          "defaultTagProviderRolePermissionMappings": [
+            {
+              "role": "",
+              "permissions": []
+            }
+          ],
+          "tagProviderRolePermissionMappings": [
+            {
+              "provider": "",
+              "mapping": {
+                "role": "",
+                "permissions": []
+              }
+            }
+          ]
+        },
+        "redundancy": {
+          "readOnlyWhenInactive": ""
+        },
+        "advanced": {
+          "exposedTagsEnabled": "",
+          "maxSessionCount": ""
+        }
+      },
+      "backupConfig": {
+        "endpoint": {
+          "bindPort": "",
+          "bindAddresses": [],
+          "endpointAddresses": [],
+          "securityPolicies": [],
+          "messageSecurityModes": []
+        },
+        "authentication": {
+          "anonymousAccessAllowed": "",
+          "authenticationProfile": ""
+        },
+        "accessControl": {
+          "defaultDeviceRolePermissionMappings": [
+            {
+              "role": "",
+              "permissions": []
+            }
+          ],
+          "defaultTagProviderRolePermissionMappings": [
+            {
+              "role": "",
+              "permissions": []
+            }
+          ],
+          "tagProviderRolePermissionMappings": [
+            {
+              "provider": "",
+              "mapping": {
+                "role": "",
+                "permissions": []
+              }
+            }
+          ]
+        },
+        "redundancy": {
+          "readOnlyWhenInactive": ""
+        },
+        "advanced": {
+          "exposedTagsEnabled": "",
+          "maxSessionCount": ""
+        }
+      }
+    }
+  ]
+}

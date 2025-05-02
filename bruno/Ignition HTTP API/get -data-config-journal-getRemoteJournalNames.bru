@@ -1,0 +1,15 @@
+meta {
+  name: get /data/config/journal/getRemoteJournalNames
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/config/journal/getRemoteJournalNames
+  body: none
+  auth: none
+}
+
+params:query {
+  gatewayName: 
+}

@@ -1,0 +1,16 @@
+meta {
+  name: List Resource Types
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/ResourceTypes
+  body: none
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get Database Translator Config
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/find/ignition/database-translator/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}

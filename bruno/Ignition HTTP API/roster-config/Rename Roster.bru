@@ -1,0 +1,26 @@
+meta {
+  name: Rename Roster
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/rename/ignition/roster-config/:name
+  body: json
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}
+
+body:json {
+  {
+    "name": "",
+    "references": ""
+  }
+}

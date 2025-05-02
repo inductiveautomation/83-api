@@ -1,0 +1,15 @@
+meta {
+  name: Gateway Network Crawler
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/gateway-network/crawler
+  body: none
+  auth: none
+}
+
+params:query {
+  ~ignoreCrawlerCache: 
+}

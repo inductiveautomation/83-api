@@ -1,0 +1,31 @@
+meta {
+  name: Retrieve an audit log
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/audit/log/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~actorFilter: 
+  ~actionFilter: 
+  ~targetFilter: 
+  ~valueFilter: 
+  ~systemFilter: 
+  ~contextFilter: 
+  ~startTime: 
+  ~endTime: 
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  name: 
+}

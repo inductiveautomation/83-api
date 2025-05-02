@@ -1,0 +1,36 @@
+meta {
+  name: Create Remote Upgrade
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/remote-upgrade
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "serverId": "",
+        "statusTimestamp": "",
+        "agentGroup": "",
+        "upgradeStatus": "",
+        "statusMsg": ""
+      },
+      "backupConfig": {
+        "serverId": "",
+        "statusTimestamp": "",
+        "agentGroup": "",
+        "upgradeStatus": "",
+        "statusMsg": ""
+      }
+    }
+  ]
+}
