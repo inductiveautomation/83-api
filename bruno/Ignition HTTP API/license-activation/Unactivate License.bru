@@ -1,0 +1,15 @@
+meta {
+  name: Unactivate License
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/activation/unactivate/:key
+  body: none
+  auth: none
+}
+
+params:path {
+  key: 
+}

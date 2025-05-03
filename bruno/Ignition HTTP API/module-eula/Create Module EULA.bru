@@ -1,0 +1,30 @@
+meta {
+  name: Create Module EULA
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/module-eulas
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "moduleId": "",
+        "crc": ""
+      },
+      "backupConfig": {
+        "moduleId": "",
+        "crc": ""
+      }
+    }
+  ]
+}

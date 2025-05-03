@@ -1,0 +1,31 @@
+meta {
+  name: Modify Agent Management
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/agent-management
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "serverId": "",
+        "groupName": ""
+      },
+      "backupConfig": {
+        "serverId": "",
+        "groupName": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get general event stream status
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/event-stream/api/v1/streams/status
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

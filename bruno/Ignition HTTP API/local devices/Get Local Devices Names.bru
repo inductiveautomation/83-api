@@ -1,0 +1,19 @@
+meta {
+  name: Get Local Devices Names
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/names/com.inductiveautomation.opcua.drivers.bacnet/BacnetIpLocalDeviceConfig
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Create Agent Management
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/agent-management
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "serverId": "",
+        "groupName": ""
+      },
+      "backupConfig": {
+        "serverId": "",
+        "groupName": ""
+      }
+    }
+  ]
+}

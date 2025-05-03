@@ -1,0 +1,77 @@
+meta {
+  name: Modify Database Connection
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/database-connection
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "driver": "",
+        "translator": "",
+        "includeSchemaInTableName": "",
+        "connectURL": "",
+        "username": "",
+        "password": "",
+        "connectionProps": "",
+        "connectionResetParams": "",
+        "defaultTransactionLevel": "",
+        "poolInitSize": "",
+        "poolMaxActive": "",
+        "poolMaxIdle": "",
+        "poolMinIdle": "",
+        "poolMaxWait": "",
+        "validationQuery": "",
+        "testOnBorrow": "",
+        "testOnReturn": "",
+        "testWhileIdle": "",
+        "evictionRate": "",
+        "evictionTests": "",
+        "evictionTime": "",
+        "failoverProfile": "",
+        "failoverMode": "",
+        "slowQueryLogThreshold": "",
+        "validationSleepTime": ""
+      },
+      "backupConfig": {
+        "driver": "",
+        "translator": "",
+        "includeSchemaInTableName": "",
+        "connectURL": "",
+        "username": "",
+        "password": "",
+        "connectionProps": "",
+        "connectionResetParams": "",
+        "defaultTransactionLevel": "",
+        "poolInitSize": "",
+        "poolMaxActive": "",
+        "poolMaxIdle": "",
+        "poolMinIdle": "",
+        "poolMaxWait": "",
+        "validationQuery": "",
+        "testOnBorrow": "",
+        "testOnReturn": "",
+        "testWhileIdle": "",
+        "evictionRate": "",
+        "evictionTests": "",
+        "evictionTime": "",
+        "failoverProfile": "",
+        "failoverMode": "",
+        "slowQueryLogThreshold": "",
+        "validationSleepTime": ""
+      }
+    }
+  ]
+}

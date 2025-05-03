@@ -1,0 +1,16 @@
+meta {
+  name: List Group Resources
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/Groups
+  body: none
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+}

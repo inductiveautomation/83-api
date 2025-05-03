@@ -1,0 +1,19 @@
+meta {
+  name: Get OAuth2 Client Config
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/find/ignition/oauth2-client/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}

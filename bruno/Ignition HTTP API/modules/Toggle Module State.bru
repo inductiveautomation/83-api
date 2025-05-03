@@ -1,0 +1,18 @@
+meta {
+  name: Toggle Module State
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/modules/toggle-state
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "enable": [],
+    "disable": []
+  }
+}

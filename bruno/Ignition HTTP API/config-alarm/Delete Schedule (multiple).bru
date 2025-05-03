@@ -1,0 +1,25 @@
+meta {
+  name: Delete Schedule (multiple)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/delete/ignition/schedule
+  body: json
+  auth: none
+}
+
+params:query {
+  ~confirm: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "signature": "",
+      "collection": ""
+    }
+  ]
+}

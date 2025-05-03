@@ -1,0 +1,24 @@
+meta {
+  name: Create Font
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.perspective/fonts
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {},
+      "backupConfig": {}
+    }
+  ]
+}

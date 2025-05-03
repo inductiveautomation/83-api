@@ -1,0 +1,31 @@
+meta {
+  name: Modify Holiday
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/holiday
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "date": "",
+        "repeatAnnually": ""
+      },
+      "backupConfig": {
+        "date": "",
+        "repeatAnnually": ""
+      }
+    }
+  ]
+}

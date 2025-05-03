@@ -1,0 +1,62 @@
+meta {
+  name: Create Local Devices
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.opcua.drivers.bacnet/BacnetIpLocalDeviceConfig
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "ipConnectivity": {
+          "bindAddress": "",
+          "bindPort": "",
+          "broadcastAddress": "",
+          "networkPrefixLength": ""
+        },
+        "bacnetConnectivity": {
+          "deviceNumber": "",
+          "networkNumber": ""
+        },
+        "broadcastManagement": {
+          "foreignDeviceRegistrationEnabled": "",
+          "address": "",
+          "port": ""
+        },
+        "redundancy": {
+          "backupDeviceNumber": ""
+        }
+      },
+      "backupConfig": {
+        "ipConnectivity": {
+          "bindAddress": "",
+          "bindPort": "",
+          "broadcastAddress": "",
+          "networkPrefixLength": ""
+        },
+        "bacnetConnectivity": {
+          "deviceNumber": "",
+          "networkNumber": ""
+        },
+        "broadcastManagement": {
+          "foreignDeviceRegistrationEnabled": "",
+          "address": "",
+          "port": ""
+        },
+        "redundancy": {
+          "backupDeviceNumber": ""
+        }
+      }
+    }
+  ]
+}

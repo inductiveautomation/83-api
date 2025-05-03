@@ -1,0 +1,15 @@
+meta {
+  name: Cancel chart
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/sfc/api/v1/charts/:uuid/cancel
+  body: none
+  auth: none
+}
+
+params:path {
+  uuid: 
+}

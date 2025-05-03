@@ -1,0 +1,53 @@
+meta {
+  name: Create Brand Customization
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/cobranding
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "enabled": "",
+        "backgroundColor": "",
+        "textColor": "",
+        "buttonColor": "",
+        "buttonTextColor": "",
+        "logo": "",
+        "favicon": "",
+        "appIcon": "",
+        "logoType": "",
+        "logoName": "",
+        "faviconName": "",
+        "appIconName": "",
+        "faviconSize": "",
+        "appIconSize": ""
+      },
+      "backupConfig": {
+        "enabled": "",
+        "backgroundColor": "",
+        "textColor": "",
+        "buttonColor": "",
+        "buttonTextColor": "",
+        "logo": "",
+        "favicon": "",
+        "appIcon": "",
+        "logoType": "",
+        "logoName": "",
+        "faviconName": "",
+        "appIconName": "",
+        "faviconSize": "",
+        "appIconSize": ""
+      }
+    }
+  ]
+}

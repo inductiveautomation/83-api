@@ -1,0 +1,24 @@
+meta {
+  name: Create Email Profile Settings
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/email-profile
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

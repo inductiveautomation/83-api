@@ -1,0 +1,15 @@
+meta {
+  name: Get Module Settings Config
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/singleton/com.inductiveautomation.eam/module-settings
+  body: none
+  auth: none
+}
+
+params:query {
+  ~defaultIfUndefined: 
+}

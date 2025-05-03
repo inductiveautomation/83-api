@@ -1,0 +1,18 @@
+meta {
+  name: Acquire Project Scan Lock
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/scan-lock/projects
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "acquireTimeout": "",
+    "holdTimeout": ""
+  }
+}

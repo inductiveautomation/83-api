@@ -1,0 +1,36 @@
+meta {
+  name: Modify Translations
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/translations
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "caseInsensitive": "",
+        "ignoreWhitespace": "",
+        "ignorePunctuation": "",
+        "ignoreTags": "",
+        "terms": {}
+      },
+      "backupConfig": {
+        "caseInsensitive": "",
+        "ignoreWhitespace": "",
+        "ignorePunctuation": "",
+        "ignoreTags": "",
+        "terms": {}
+      }
+    }
+  ]
+}

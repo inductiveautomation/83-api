@@ -1,0 +1,25 @@
+meta {
+  name: Logs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/logs
+  body: none
+  auth: none
+}
+
+params:query {
+  ~properties: 
+  ~minLevel: 
+  ~allowedMarkers: 
+  ~startTime: 
+  ~endTime: 
+  ~logger: 
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Get Service Provider Configuration
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/ServiceProviderConfig
+  body: none
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Delete Alarm Journal Settings (multiple)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/delete/ignition/alarm-journal
+  body: json
+  auth: none
+}
+
+params:query {
+  ~confirm: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "signature": "",
+      "collection": ""
+    }
+  ]
+}

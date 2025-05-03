@@ -1,0 +1,15 @@
+meta {
+  name: Get transaction groups status for a specific project
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/fsql/api/v1/status/project/:name
+  body: none
+  auth: none
+}
+
+params:path {
+  name: 
+}

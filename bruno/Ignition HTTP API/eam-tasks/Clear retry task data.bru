@@ -1,0 +1,15 @@
+meta {
+  name: Clear retry task data
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{baseUrl}}/data/eam/api/v1/eam-tasks/clear-retry/:name
+  body: none
+  auth: none
+}
+
+params:path {
+  name: 
+}

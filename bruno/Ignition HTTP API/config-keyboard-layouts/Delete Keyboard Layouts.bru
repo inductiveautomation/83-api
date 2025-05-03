@@ -1,0 +1,21 @@
+meta {
+  name: Delete Keyboard Layouts
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/keyboard_layout/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

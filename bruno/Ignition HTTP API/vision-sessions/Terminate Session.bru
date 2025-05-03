@@ -1,0 +1,15 @@
+meta {
+  name: Terminate Session
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/data/vision/api/v1/client/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 
+}

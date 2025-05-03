@@ -1,0 +1,23 @@
+meta {
+  name: Gateway Script Diagnostics
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/scripts/diagnostics/:type
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  type: 
+}

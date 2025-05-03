@@ -1,0 +1,15 @@
+meta {
+  name: Get Proxy Rules Config
+  type: http
+  seq: 24
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/singleton/ignition/gateway-network-proxy-rules
+  body: none
+  auth: none
+}
+
+params:query {
+  ~defaultIfUndefined: 
+}

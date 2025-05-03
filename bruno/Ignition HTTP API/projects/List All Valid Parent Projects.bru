@@ -1,0 +1,19 @@
+meta {
+  name: List All Valid Parent Projects
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/projects/parents
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

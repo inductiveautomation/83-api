@@ -1,0 +1,23 @@
+meta {
+  name: Update Deployment Mode
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/mode/:name
+  body: json
+  auth: none
+}
+
+params:path {
+  name: 
+}
+
+body:json {
+  {
+    "name": "",
+    "title": "",
+    "description": ""
+  }
+}

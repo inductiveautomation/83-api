@@ -1,0 +1,11 @@
+meta {
+  name: Get Remote Server Names
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/gateway-network/diagnostics/getRemoteServerIds
+  body: none
+  auth: none
+}

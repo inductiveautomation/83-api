@@ -1,0 +1,21 @@
+meta {
+  name: Delete Database Translator
+  type: http
+  seq: 18
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/database-translator/:name/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+  ~confirm: 
+}
+
+params:path {
+  name: 
+  signature: 
+}

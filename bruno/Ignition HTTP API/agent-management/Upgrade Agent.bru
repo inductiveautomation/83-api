@@ -1,0 +1,16 @@
+meta {
+  name: Upgrade Agent
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{baseUrl}}/data/eam/api/v1/upgrade-agent/:groupName/:agentName
+  body: none
+  auth: none
+}
+
+params:path {
+  groupName: 
+  agentName: 
+}

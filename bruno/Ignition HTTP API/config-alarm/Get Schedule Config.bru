@@ -1,0 +1,19 @@
+meta {
+  name: Get Schedule Config
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/find/ignition/schedule/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}

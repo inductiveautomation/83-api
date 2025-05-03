@@ -1,0 +1,18 @@
+meta {
+  name: Cancel Alarming Pipeline
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/data/alarm-notification/api/v1/pipeline
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "path": "",
+    "alarmEventId": ""
+  }
+}

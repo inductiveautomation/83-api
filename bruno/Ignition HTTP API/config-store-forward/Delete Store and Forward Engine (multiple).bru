@@ -1,0 +1,25 @@
+meta {
+  name: Delete Store and Forward Engine (multiple)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/delete/ignition/store-and-forward-engine
+  body: json
+  auth: none
+}
+
+params:query {
+  ~confirm: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "signature": "",
+      "collection": ""
+    }
+  ]
+}

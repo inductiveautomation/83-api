@@ -1,0 +1,16 @@
+meta {
+  name: Set 'enabled' Flag
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/data/opc-ua/api/v1/diagnostics/:connectionName/enabledflag/:value
+  body: none
+  auth: none
+}
+
+params:path {
+  connectionName: 
+  value: 
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get Translations Config
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/singleton/ignition/translations
+  body: none
+  auth: none
+}
+
+params:query {
+  ~defaultIfUndefined: 
+}

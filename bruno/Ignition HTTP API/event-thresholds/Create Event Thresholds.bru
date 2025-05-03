@@ -1,0 +1,71 @@
+meta {
+  name: Create Event Thresholds
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/event-thresholds
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "alarmOnActivity": "",
+        "alarmOnMetrics": "",
+        "alarmOnTasks": "",
+        "warningPriority": "",
+        "errorPriority": "",
+        "activePipeline": "",
+        "ackPipeline": "",
+        "connectionWarning": "",
+        "connectionError": "",
+        "cpuWarning": "",
+        "cpuError": "",
+        "memWarning": "",
+        "memError": "",
+        "errPerMinWarning": "",
+        "errPerMinError": "",
+        "errPerHourWarning": "",
+        "errPerHourError": "",
+        "connectedClientsWarning": "",
+        "connectedClientsError": "",
+        "perspectiveSessionsWarning": "",
+        "perspectiveSessionsError": "",
+        "dbConnUtilWarning": "",
+        "dbConnUtilError": ""
+      },
+      "backupConfig": {
+        "alarmOnActivity": "",
+        "alarmOnMetrics": "",
+        "alarmOnTasks": "",
+        "warningPriority": "",
+        "errorPriority": "",
+        "activePipeline": "",
+        "ackPipeline": "",
+        "connectionWarning": "",
+        "connectionError": "",
+        "cpuWarning": "",
+        "cpuError": "",
+        "memWarning": "",
+        "memError": "",
+        "errPerMinWarning": "",
+        "errPerMinError": "",
+        "errPerHourWarning": "",
+        "errPerHourError": "",
+        "connectedClientsWarning": "",
+        "connectedClientsError": "",
+        "perspectiveSessionsWarning": "",
+        "perspectiveSessionsError": "",
+        "dbConnUtilWarning": "",
+        "dbConnUtilError": ""
+      }
+    }
+  ]
+}

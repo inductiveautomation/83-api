@@ -1,0 +1,24 @@
+meta {
+  name: Modify General Gateway Network Settings
+  type: http
+  seq: 16
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Monitoring Session Logs
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/logs/monitoring-session
+  body: json
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+body:json {
+  {
+    "sessionKey": "",
+    "level": "",
+    "filters": [
+      {}
+    ],
+    "since": ""
+  }
+}

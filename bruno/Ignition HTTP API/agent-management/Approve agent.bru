@@ -1,0 +1,15 @@
+meta {
+  name: Approve agent
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/data/eam/api/v1/approve-agent/:serverid
+  body: none
+  auth: none
+}
+
+params:path {
+  serverid: 
+}

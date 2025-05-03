@@ -1,0 +1,15 @@
+meta {
+  name: Get All Available Locales
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/locales
+  body: none
+  auth: none
+}
+
+params:query {
+  ~includeVariants: 
+}

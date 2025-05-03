@@ -1,0 +1,15 @@
+meta {
+  name: Perspective Session Detail
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/perspective/api/v1/session/:sessionId
+  body: none
+  auth: none
+}
+
+params:path {
+  sessionId: 
+}

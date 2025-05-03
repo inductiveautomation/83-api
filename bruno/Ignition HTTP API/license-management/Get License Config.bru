@@ -1,0 +1,19 @@
+meta {
+  name: Get License Config
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/find/com.inductiveautomation.eam/license-management/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}

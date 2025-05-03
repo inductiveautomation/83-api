@@ -1,0 +1,19 @@
+meta {
+  name: Get Device Names
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/names/com.inductiveautomation.opcua/device
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

@@ -1,0 +1,29 @@
+meta {
+  name: Create Quick Start Configuration
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/quickstart
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "finished": "",
+        "steps": []
+      },
+      "backupConfig": {
+        "finished": "",
+        "steps": []
+      }
+    }
+  ]
+}

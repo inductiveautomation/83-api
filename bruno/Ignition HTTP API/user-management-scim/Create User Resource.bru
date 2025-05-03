@@ -1,0 +1,59 @@
+meta {
+  name: Create User Resource
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/Users
+  body: json
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+}
+
+body:json {
+  {
+    "meta": {
+      "resourceType": "",
+      "location": ""
+    },
+    "schemas": [],
+    "id": "",
+    "userName": "",
+    "name": {
+      "familyName": "",
+      "givenName": ""
+    },
+    "password": "",
+    "groups": [
+      {
+        "value": "",
+        "display": ""
+      }
+    ],
+    "urn:ietf:params:scim:schemas:extension:inductiveautomation:2.0:User": {
+      "badge": "",
+      "language": "",
+      "notes": "",
+      "contactInfo": [
+        {
+          "value": "",
+          "type": ""
+        }
+      ],
+      "schedule": "",
+      "scheduleAdjustments": [
+        {
+          "start": "",
+          "end": "",
+          "available": "",
+          "note": ""
+        }
+      ]
+    }
+  }
+}

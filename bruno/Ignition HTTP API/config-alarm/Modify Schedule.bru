@@ -1,0 +1,25 @@
+meta {
+  name: Modify Schedule
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/schedule
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

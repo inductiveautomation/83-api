@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve archived backups
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/data/eam/api/v1/storage/archived-backups
+  body: none
+  auth: none
+}
+
+params:query {
+  serverids: 
+}

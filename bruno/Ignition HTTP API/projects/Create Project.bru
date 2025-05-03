@@ -1,0 +1,25 @@
+meta {
+  name: Create Project
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/projects
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "",
+    "description": "",
+    "title": "",
+    "enabled": "",
+    "parent": "",
+    "inheritable": "",
+    "defaultDb": "",
+    "tagProvider": "",
+    "userSource": ""
+  }
+}

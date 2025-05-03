@@ -1,0 +1,27 @@
+meta {
+  name: Create Gateway Homepage Notes
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/homepage-notes
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "notes": ""
+      },
+      "backupConfig": {
+        "notes": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get General Alarm Settings Config
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/singleton/ignition/general-alarm-settings
+  body: none
+  auth: none
+}
+
+params:query {
+  ~defaultIfUndefined: 
+}

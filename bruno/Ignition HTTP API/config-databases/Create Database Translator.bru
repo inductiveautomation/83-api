@@ -1,0 +1,78 @@
+meta {
+  name: Create Database Translator
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/database-translator
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "createTable": "",
+        "createAutoIncSequence": "",
+        "createAutoIncTrigger": "",
+        "createIndex": "",
+        "autoIncTypeDef": "",
+        "alterTable": "",
+        "alterTableColumnDef": "",
+        "primaryKeyDef": "",
+        "limit": "",
+        "limitClausePosition": "",
+        "currentTimeQuery": "",
+        "columnQuoteChar": "",
+        "supportsRGK": "",
+        "fetchKeyQuery": "",
+        "tableListFilter": "",
+        "i1Type": "",
+        "i2Type": "",
+        "i4Type": "",
+        "i8Type": "",
+        "boolType": "",
+        "datetimeType": "",
+        "r4Type": "",
+        "r8Type": "",
+        "stringType": "",
+        "blobType": "",
+        "textType": ""
+      },
+      "backupConfig": {
+        "createTable": "",
+        "createAutoIncSequence": "",
+        "createAutoIncTrigger": "",
+        "createIndex": "",
+        "autoIncTypeDef": "",
+        "alterTable": "",
+        "alterTableColumnDef": "",
+        "primaryKeyDef": "",
+        "limit": "",
+        "limitClausePosition": "",
+        "currentTimeQuery": "",
+        "columnQuoteChar": "",
+        "supportsRGK": "",
+        "fetchKeyQuery": "",
+        "tableListFilter": "",
+        "i1Type": "",
+        "i2Type": "",
+        "i4Type": "",
+        "i8Type": "",
+        "boolType": "",
+        "datetimeType": "",
+        "r4Type": "",
+        "r8Type": "",
+        "stringType": "",
+        "blobType": "",
+        "textType": ""
+      }
+    }
+  ]
+}

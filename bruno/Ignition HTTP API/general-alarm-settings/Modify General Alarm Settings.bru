@@ -1,0 +1,32 @@
+meta {
+  name: Modify General Alarm Settings
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/general-alarm-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "startupSuppressionTime": "",
+        "liveEventLimit": "",
+        "notifyInitialEvents": ""
+      },
+      "backupConfig": {
+        "startupSuppressionTime": "",
+        "liveEventLimit": "",
+        "notifyInitialEvents": ""
+      }
+    }
+  ]
+}

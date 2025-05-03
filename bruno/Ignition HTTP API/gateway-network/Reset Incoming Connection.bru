@@ -1,0 +1,15 @@
+meta {
+  name: Reset Incoming Connection
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/gateway-network-incoming/reset/:resourceName
+  body: none
+  auth: none
+}
+
+params:path {
+  resourceName: 
+}

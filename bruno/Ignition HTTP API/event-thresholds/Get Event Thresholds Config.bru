@@ -1,0 +1,15 @@
+meta {
+  name: Get Event Thresholds Config
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/singleton/com.inductiveautomation.eam/event-thresholds
+  body: none
+  auth: none
+}
+
+params:query {
+  ~defaultIfUndefined: 
+}

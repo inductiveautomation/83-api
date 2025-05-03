@@ -1,0 +1,20 @@
+meta {
+  name: Log Events
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/redundancy/events
+  body: none
+  auth: none
+}
+
+params:query {
+  ~timestamp: 
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

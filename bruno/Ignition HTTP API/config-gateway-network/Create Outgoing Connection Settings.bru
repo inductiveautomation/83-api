@@ -1,0 +1,48 @@
+meta {
+  name: Create Outgoing Connection Settings
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/gateway-network-outgoing
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "host": "",
+        "port": "",
+        "useSSL": "",
+        "pingRateMillis": "",
+        "pingTimeoutMillis": "",
+        "pingMaxMissed": "",
+        "wsTimeoutMillis": "",
+        "httpConnectTimeoutMillis": "",
+        "httpReadTimeoutMillis": "",
+        "sendThreads": "",
+        "receiveThreads": ""
+      },
+      "backupConfig": {
+        "host": "",
+        "port": "",
+        "useSSL": "",
+        "pingRateMillis": "",
+        "pingTimeoutMillis": "",
+        "pingMaxMissed": "",
+        "wsTimeoutMillis": "",
+        "httpConnectTimeoutMillis": "",
+        "httpReadTimeoutMillis": "",
+        "sendThreads": "",
+        "receiveThreads": ""
+      }
+    }
+  ]
+}

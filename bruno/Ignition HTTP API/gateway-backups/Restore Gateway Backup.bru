@@ -1,0 +1,18 @@
+meta {
+  name: Restore Gateway Backup
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/backup
+  body: none
+  auth: none
+}
+
+params:query {
+  ~restoreDisabled: 
+  ~disableTempProjectBackup: 
+  ~renameEnabled: 
+  ~newName: 
+}

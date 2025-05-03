@@ -1,0 +1,43 @@
+meta {
+  name: Modify JDBC Driver
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/database-driver
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "type": "",
+        "defaultTranslator": "",
+        "classname": "",
+        "urlFormat": "",
+        "urlInstructions": "",
+        "defaultProps": "",
+        "defaultPropInstructions": "",
+        "defaultValidationQuery": ""
+      },
+      "backupConfig": {
+        "type": "",
+        "defaultTranslator": "",
+        "classname": "",
+        "urlFormat": "",
+        "urlInstructions": "",
+        "defaultProps": "",
+        "defaultPropInstructions": "",
+        "defaultValidationQuery": ""
+      }
+    }
+  ]
+}

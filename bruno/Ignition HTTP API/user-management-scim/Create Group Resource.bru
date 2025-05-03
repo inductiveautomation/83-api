@@ -1,0 +1,38 @@
+meta {
+  name: Create Group Resource
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/scim/:profile-name/:scim-version/Groups
+  body: json
+  auth: none
+}
+
+params:path {
+  profile-name: 
+  scim-version: 
+}
+
+body:json {
+  {
+    "meta": {
+      "resourceType": "",
+      "location": ""
+    },
+    "schemas": [],
+    "id": "",
+    "displayName": "",
+    "members": [
+      {
+        "value": "",
+        "display": "",
+        "type": ""
+      }
+    ],
+    "urn:ietf:params:scim:schemas:extension:inductiveautomation:2.0:Group": {
+      "notes": ""
+    }
+  }
+}

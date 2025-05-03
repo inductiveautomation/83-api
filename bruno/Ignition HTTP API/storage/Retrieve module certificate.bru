@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve module certificate
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/eam/api/v1/eam-tasks/module-cert
+  body: none
+  auth: none
+}
+
+params:query {
+  filePath: 
+}

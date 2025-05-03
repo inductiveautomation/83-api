@@ -1,0 +1,15 @@
+meta {
+  name: Cancel Script
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/scripts/cancel-script/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 
+}

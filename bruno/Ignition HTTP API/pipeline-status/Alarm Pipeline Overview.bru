@@ -1,0 +1,19 @@
+meta {
+  name: Alarm Pipeline Overview
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/data/alarm-notification/api/v1/pipelines
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
