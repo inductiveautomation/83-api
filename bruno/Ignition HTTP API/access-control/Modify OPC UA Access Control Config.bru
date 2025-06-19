@@ -1,0 +1,24 @@
+meta {
+  name: Modify OPC UA Access Control Config
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.opcua/access-control
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

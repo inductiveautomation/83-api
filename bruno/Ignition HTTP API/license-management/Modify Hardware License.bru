@@ -1,0 +1,31 @@
+meta {
+  name: Modify Hardware License
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/hw-license-management
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "licenseKey": "",
+        "agentName": ""
+      },
+      "backupConfig": {
+        "licenseKey": "",
+        "agentName": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Modify Service Connectors
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/service-connector
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

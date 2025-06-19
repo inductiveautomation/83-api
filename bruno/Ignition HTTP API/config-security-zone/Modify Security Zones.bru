@@ -1,0 +1,63 @@
+meta {
+  name: Modify Security Zones
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/security-zone
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "signature": "",
+      "config": {
+        "ipAddresses": [],
+        "hostNames": [],
+        "gatewayNames": [],
+        "isSecure": "",
+        "directConnection": "",
+        "scopeClient": "",
+        "scopeDesigner": "",
+        "scopeGateway": "",
+        "entityPolicies": [
+          {
+            "entityId": "",
+            "propName": "",
+            "propValue": ""
+          }
+        ],
+        "entityZonePolicy": {
+          "priority": ""
+        }
+      },
+      "backupConfig": {
+        "ipAddresses": [],
+        "hostNames": [],
+        "gatewayNames": [],
+        "isSecure": "",
+        "directConnection": "",
+        "scopeClient": "",
+        "scopeDesigner": "",
+        "scopeGateway": "",
+        "entityPolicies": [
+          {
+            "entityId": "",
+            "propName": "",
+            "propValue": ""
+          }
+        ],
+        "entityZonePolicy": {
+          "priority": ""
+        }
+      }
+    }
+  ]
+}

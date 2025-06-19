@@ -1,0 +1,19 @@
+meta {
+  name: List Incoming Connections
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/gateway-network-incoming/list
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

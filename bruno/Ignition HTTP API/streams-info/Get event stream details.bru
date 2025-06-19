@@ -1,0 +1,23 @@
+meta {
+  name: Get event stream details
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/event-stream/api/v1/streams/details/:project
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  project: 
+}

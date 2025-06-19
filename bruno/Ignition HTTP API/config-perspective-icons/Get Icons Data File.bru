@@ -1,0 +1,20 @@
+meta {
+  name: Get Icons Data File
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/datafile/com.inductiveautomation.perspective/icons/:name/:filename
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+  filename: 
+}

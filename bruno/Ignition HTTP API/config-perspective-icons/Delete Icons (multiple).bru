@@ -1,0 +1,25 @@
+meta {
+  name: Delete Icons (multiple)
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/delete/com.inductiveautomation.perspective/icons
+  body: json
+  auth: none
+}
+
+params:query {
+  ~confirm: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "signature": "",
+      "collection": ""
+    }
+  ]
+}

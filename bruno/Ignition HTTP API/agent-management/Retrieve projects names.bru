@@ -1,0 +1,16 @@
+meta {
+  name: Retrieve projects names
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/data/eam/api/v1/agent-management/projects
+  body: none
+  auth: none
+}
+
+params:query {
+  ~serverid: 
+  ~localsystem: 
+}

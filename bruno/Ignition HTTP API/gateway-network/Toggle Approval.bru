@@ -1,0 +1,16 @@
+meta {
+  name: Toggle Approval
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/gateway-network-incoming/toggleApproval/:remoteId/:approve
+  body: none
+  auth: none
+}
+
+params:path {
+  remoteId: 
+  approve: 
+}

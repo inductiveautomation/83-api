@@ -1,0 +1,30 @@
+meta {
+  name: Create Leased License
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/leased-license-management
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": "",
+      "description": "",
+      "config": {
+        "licenseKey": "",
+        "agentName": ""
+      },
+      "backupConfig": {
+        "licenseKey": "",
+        "agentName": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Remote Tag Providers
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/gateway-network/remote-tag-providers/:serverId
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  serverId: 
+}
