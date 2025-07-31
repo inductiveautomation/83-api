@@ -10,11 +10,15 @@ put {
   auth: none
 }
 
+params:query {
+  ~allowInvalidReferences: 
+}
+
 body:json {
   [
     {
       "collection": "",
-      "enabled": "",
+      "enabled": false,
       "description": "",
       "signature": "",
       "config": {
@@ -34,7 +38,7 @@ body:json {
           "sendStatsInterval": "",
           "httpConnectTimeout": "",
           "httpReadTimeout": "",
-          "forwardLeasedLicense": ""
+          "forwardLeasedLicense": false
         }
       },
       "backupConfig": {
@@ -54,7 +58,7 @@ body:json {
           "sendStatsInterval": "",
           "httpConnectTimeout": "",
           "httpReadTimeout": "",
-          "forwardLeasedLicense": ""
+          "forwardLeasedLicense": false
         }
       }
     }

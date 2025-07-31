@@ -10,15 +10,33 @@ post {
   auth: none
 }
 
+params:query {
+  ~allowInvalidReferences: 
+}
+
 body:json {
   [
     {
       "name": "",
       "collection": "",
-      "enabled": "",
+      "enabled": false,
       "description": "",
-      "config": "",
-      "backupConfig": ""
+      "config": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      },
+      "backupConfig": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      }
     }
   ]
 }

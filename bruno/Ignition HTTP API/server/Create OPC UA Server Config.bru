@@ -10,11 +10,15 @@ post {
   auth: none
 }
 
+params:query {
+  ~allowInvalidReferences: 
+}
+
 body:json {
   [
     {
       "collection": "",
-      "enabled": "",
+      "enabled": false,
       "description": "",
       "config": {
         "endpoint": {
@@ -25,16 +29,16 @@ body:json {
           "messageSecurityModes": []
         },
         "authentication": {
-          "anonymousAccessAllowed": "",
+          "anonymousAccessAllowed": false,
           "authenticationProfile": ""
         },
         "redundancy": {
-          "readOnlyWhenInactive": ""
+          "readOnlyWhenInactive": false
         },
         "advanced": {
-          "exposedTagsEnabled": "",
+          "exposedTagsEnabled": false,
           "maxSessionCount": "",
-          "gdsPushEnabled": ""
+          "gdsPushEnabled": false
         }
       },
       "backupConfig": {
@@ -46,16 +50,16 @@ body:json {
           "messageSecurityModes": []
         },
         "authentication": {
-          "anonymousAccessAllowed": "",
+          "anonymousAccessAllowed": false,
           "authenticationProfile": ""
         },
         "redundancy": {
-          "readOnlyWhenInactive": ""
+          "readOnlyWhenInactive": false
         },
         "advanced": {
-          "exposedTagsEnabled": "",
+          "exposedTagsEnabled": false,
           "maxSessionCount": "",
-          "gdsPushEnabled": ""
+          "gdsPushEnabled": false
         }
       }
     }

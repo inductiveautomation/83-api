@@ -1,0 +1,17 @@
+meta {
+  name: Trust Endpoint Certificate
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/data/opc-ua/api/v1/client/pki/certificate/trust
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "certificate": ""
+  }
+}

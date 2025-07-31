@@ -1,0 +1,15 @@
+meta {
+  name: Delete Rejected Server Certificate
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/opc-ua/api/v1/server/pki/certificates/rejected/:signature
+  body: none
+  auth: none
+}
+
+params:path {
+  signature: 
+}

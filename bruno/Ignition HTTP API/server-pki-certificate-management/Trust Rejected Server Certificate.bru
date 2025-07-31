@@ -1,0 +1,15 @@
+meta {
+  name: Trust Rejected Server Certificate
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/data/opc-ua/api/v1/server/pki/certificates/trusted/:signature
+  body: none
+  auth: none
+}
+
+params:path {
+  signature: 
+}

@@ -10,16 +10,34 @@ put {
   auth: none
 }
 
+params:query {
+  ~allowInvalidReferences: 
+}
+
 body:json {
   [
     {
       "name": "",
       "collection": "",
-      "enabled": "",
+      "enabled": false,
       "description": "",
       "signature": "",
-      "config": "",
-      "backupConfig": ""
+      "config": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      },
+      "backupConfig": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      }
     }
   ]
 }
