@@ -1,0 +1,19 @@
+meta {
+  name: EAM Agents Status
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/data/eam/api/v1/agents
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

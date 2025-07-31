@@ -1,0 +1,16 @@
+meta {
+  name: Get OPC UA Access Control Config Config
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/singleton/com.inductiveautomation.opcua/access-control
+  body: none
+  auth: none
+}
+
+params:query {
+  ~defaultIfUndefined: 
+  ~collection: 
+}

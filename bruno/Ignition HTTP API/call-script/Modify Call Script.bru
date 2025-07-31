@@ -1,0 +1,57 @@
+meta {
+  name: Modify Call Script
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.sip-notification/script-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "signature": "",
+      "config": {
+        "locale": "",
+        "voice": "",
+        "greeting": "",
+        "challenge": "",
+        "nonChallenge": "",
+        "invalidPin": "",
+        "summary": "",
+        "activeMessage": "",
+        "clearMessage": "",
+        "option1": "",
+        "ackConf": "",
+        "option2": "",
+        "ignoreConf": "",
+        "option3": "",
+        "closing": ""
+      },
+      "backupConfig": {
+        "locale": "",
+        "voice": "",
+        "greeting": "",
+        "challenge": "",
+        "nonChallenge": "",
+        "invalidPin": "",
+        "summary": "",
+        "activeMessage": "",
+        "clearMessage": "",
+        "option1": "",
+        "ackConf": "",
+        "option2": "",
+        "ignoreConf": "",
+        "option3": "",
+        "closing": ""
+      }
+    }
+  ]
+}

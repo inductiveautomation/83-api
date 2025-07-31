@@ -1,0 +1,25 @@
+meta {
+  name: Delete OPC Connections (multiple)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/delete/ignition/opc-connection
+  body: json
+  auth: none
+}
+
+params:query {
+  ~confirm: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "signature": "",
+      "collection": ""
+    }
+  ]
+}

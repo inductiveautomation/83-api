@@ -1,0 +1,17 @@
+meta {
+  name: Uninstall Module[s]
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/modules/uninstall
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "uninstall": []
+  }
+}

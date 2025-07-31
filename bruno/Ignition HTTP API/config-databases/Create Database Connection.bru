@@ -10,17 +10,21 @@ post {
   auth: none
 }
 
+params:query {
+  ~allowInvalidReferences: 
+}
+
 body:json {
   [
     {
       "name": "",
       "collection": "",
-      "enabled": "",
+      "enabled": false,
       "description": "",
       "config": {
         "driver": "",
         "translator": "",
-        "includeSchemaInTableName": "",
+        "includeSchemaInTableName": false,
         "connectURL": "",
         "username": "",
         "password": "",
@@ -33,9 +37,9 @@ body:json {
         "poolMinIdle": "",
         "poolMaxWait": "",
         "validationQuery": "",
-        "testOnBorrow": "",
-        "testOnReturn": "",
-        "testWhileIdle": "",
+        "testOnBorrow": false,
+        "testOnReturn": false,
+        "testWhileIdle": false,
         "evictionRate": "",
         "evictionTests": "",
         "evictionTime": "",
@@ -47,7 +51,7 @@ body:json {
       "backupConfig": {
         "driver": "",
         "translator": "",
-        "includeSchemaInTableName": "",
+        "includeSchemaInTableName": false,
         "connectURL": "",
         "username": "",
         "password": "",
@@ -60,9 +64,9 @@ body:json {
         "poolMinIdle": "",
         "poolMaxWait": "",
         "validationQuery": "",
-        "testOnBorrow": "",
-        "testOnReturn": "",
-        "testWhileIdle": "",
+        "testOnBorrow": false,
+        "testOnReturn": false,
+        "testWhileIdle": false,
         "evictionRate": "",
         "evictionTests": "",
         "evictionTime": "",

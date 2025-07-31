@@ -1,0 +1,43 @@
+meta {
+  name: Modify Rosters
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/roster-config
+  body: json
+  auth: none
+}
+
+params:query {
+  ~allowInvalidReferences: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "signature": "",
+      "config": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      },
+      "backupConfig": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get Trusted Client Certificates
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/data/opc-ua/api/v1/client/pki/certificates/trusted
+  body: none
+  auth: none
+}

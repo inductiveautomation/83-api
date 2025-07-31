@@ -1,0 +1,42 @@
+meta {
+  name: Create Rosters
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/roster-config
+  body: json
+  auth: none
+}
+
+params:query {
+  ~allowInvalidReferences: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "config": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      },
+      "backupConfig": {
+        "users": [
+          {
+            "userId": "",
+            "profile": ""
+          }
+        ]
+      }
+    }
+  ]
+}

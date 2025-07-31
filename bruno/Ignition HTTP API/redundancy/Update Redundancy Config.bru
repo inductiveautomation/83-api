@@ -1,7 +1,7 @@
 meta {
   name: Update Redundancy Config
   type: http
-  seq: 4
+  seq: 3
 }
 
 put {
@@ -15,7 +15,7 @@ body:json {
     "gatewayNetworkSetup": {
       "host": "",
       "port": "",
-      "enableSsl": "",
+      "enableSsl": false,
       "pingRate": "",
       "pingTimeout": "",
       "pingMaxMissed": "",
@@ -29,10 +29,10 @@ body:json {
     "joinWaitTime": "",
     "role": "",
     "standbyActivityLevel": "",
-    "syncTimoutSecs": "",
-    "autoDetectLocal": "",
+    "syncTimeoutSecs": "",
+    "autoDetectLocal": false,
     "localInterface": "",
     "masterRecoveryMode": "",
-    "useActiveUptimeToResolveConflict": ""
+    "useActiveUptimeToResolveConflict": false
   }
 }

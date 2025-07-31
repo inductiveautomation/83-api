@@ -1,0 +1,15 @@
+meta {
+  name: Delete Trusted Client Certificate
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/data/opc-ua/api/v1/client/pki/certificates/trusted/:signature
+  body: none
+  auth: none
+}
+
+params:path {
+  signature: 
+}

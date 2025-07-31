@@ -1,0 +1,28 @@
+meta {
+  name: Create Tag Providers
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/ignition/tag-provider
+  body: json
+  auth: none
+}
+
+params:query {
+  ~allowInvalidReferences: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Modify Fonts
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.perspective/fonts
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "signature": "",
+      "config": {},
+      "backupConfig": {}
+    }
+  ]
+}
