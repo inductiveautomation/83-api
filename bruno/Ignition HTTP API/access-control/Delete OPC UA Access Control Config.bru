@@ -1,0 +1,19 @@
+meta {
+  name: Delete OPC UA Access Control Config
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.opcua/access-control/:signature
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  signature: 
+}

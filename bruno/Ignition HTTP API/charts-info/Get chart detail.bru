@@ -1,13 +1,21 @@
 meta {
   name: Get chart detail
   type: http
-  seq: 2
+  seq: 3
 }
 
 get {
   url: {{baseUrl}}/data/sfc/api/v1/charts/:projectName/:chartPath
   body: none
   auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
 }
 
 params:path {

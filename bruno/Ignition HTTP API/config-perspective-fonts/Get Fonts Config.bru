@@ -1,0 +1,19 @@
+meta {
+  name: Get Fonts Config
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/find/com.inductiveautomation.perspective/fonts/:name
+  body: none
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}

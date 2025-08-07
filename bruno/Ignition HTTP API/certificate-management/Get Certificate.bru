@@ -1,0 +1,15 @@
+meta {
+  name: Get Certificate
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/data/opc-ua/api/v1/:routeType/certificate
+  body: none
+  auth: none
+}
+
+params:path {
+  routeType: 
+}

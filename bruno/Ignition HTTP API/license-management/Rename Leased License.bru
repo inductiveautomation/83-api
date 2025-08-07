@@ -1,0 +1,26 @@
+meta {
+  name: Rename Leased License
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/rename/com.inductiveautomation.eam/leased-license-management/:name
+  body: json
+  auth: none
+}
+
+params:query {
+  ~collection: 
+}
+
+params:path {
+  name: 
+}
+
+body:json {
+  {
+    "name": "",
+    "references": ""
+  }
+}

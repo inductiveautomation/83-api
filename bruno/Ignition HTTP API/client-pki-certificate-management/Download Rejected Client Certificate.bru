@@ -1,0 +1,15 @@
+meta {
+  name: Download Rejected Client Certificate
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/data/opc-ua/api/v1/client/pki/certificates/rejected/:signature
+  body: none
+  auth: none
+}
+
+params:path {
+  signature: 
+}

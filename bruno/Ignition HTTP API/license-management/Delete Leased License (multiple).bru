@@ -1,0 +1,25 @@
+meta {
+  name: Delete Leased License (multiple)
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/delete/com.inductiveautomation.eam/leased-license-management
+  body: json
+  auth: none
+}
+
+params:query {
+  ~confirm: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "signature": "",
+      "collection": ""
+    }
+  ]
+}

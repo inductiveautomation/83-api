@@ -1,0 +1,29 @@
+meta {
+  name: Modify Devices
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.opcua/device
+  body: json
+  auth: none
+}
+
+params:query {
+  ~allowInvalidReferences: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "signature": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

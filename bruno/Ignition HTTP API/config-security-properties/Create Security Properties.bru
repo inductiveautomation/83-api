@@ -10,11 +10,15 @@ post {
   auth: none
 }
 
+params:query {
+  ~allowInvalidReferences: 
+}
+
 body:json {
   [
     {
       "collection": "",
-      "enabled": "",
+      "enabled": false,
       "description": "",
       "config": "",
       "backupConfig": ""

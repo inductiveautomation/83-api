@@ -1,0 +1,35 @@
+meta {
+  name: Modify Leased License
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.eam/leased-license-management
+  body: json
+  auth: none
+}
+
+params:query {
+  ~allowInvalidReferences: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "signature": "",
+      "config": {
+        "licenseKey": "",
+        "agentName": ""
+      },
+      "backupConfig": {
+        "licenseKey": "",
+        "agentName": ""
+      }
+    }
+  ]
+}

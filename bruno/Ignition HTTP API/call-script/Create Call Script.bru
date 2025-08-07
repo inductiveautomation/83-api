@@ -1,0 +1,56 @@
+meta {
+  name: Create Call Script
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.sip-notification/script-settings
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "config": {
+        "locale": "",
+        "voice": "",
+        "greeting": "",
+        "challenge": "",
+        "nonChallenge": "",
+        "invalidPin": "",
+        "summary": "",
+        "activeMessage": "",
+        "clearMessage": "",
+        "option1": "",
+        "ackConf": "",
+        "option2": "",
+        "ignoreConf": "",
+        "option3": "",
+        "closing": ""
+      },
+      "backupConfig": {
+        "locale": "",
+        "voice": "",
+        "greeting": "",
+        "challenge": "",
+        "nonChallenge": "",
+        "invalidPin": "",
+        "summary": "",
+        "activeMessage": "",
+        "clearMessage": "",
+        "option1": "",
+        "ackConf": "",
+        "option2": "",
+        "ignoreConf": "",
+        "option3": "",
+        "closing": ""
+      }
+    }
+  ]
+}

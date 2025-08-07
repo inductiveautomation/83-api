@@ -10,11 +10,15 @@ post {
   auth: none
 }
 
+params:query {
+  ~allowInvalidReferences: 
+}
+
 body:json {
   [
     {
       "collection": "",
-      "enabled": "",
+      "enabled": false,
       "description": "",
       "config": {
         "endpoint": {
@@ -25,38 +29,16 @@ body:json {
           "messageSecurityModes": []
         },
         "authentication": {
-          "anonymousAccessAllowed": "",
+          "anonymousAccessAllowed": false,
           "authenticationProfile": ""
         },
-        "accessControl": {
-          "defaultDeviceRolePermissionMappings": [
-            {
-              "role": "",
-              "permissions": []
-            }
-          ],
-          "defaultTagProviderRolePermissionMappings": [
-            {
-              "role": "",
-              "permissions": []
-            }
-          ],
-          "tagProviderRolePermissionMappings": [
-            {
-              "provider": "",
-              "mapping": {
-                "role": "",
-                "permissions": []
-              }
-            }
-          ]
-        },
         "redundancy": {
-          "readOnlyWhenInactive": ""
+          "readOnlyWhenInactive": false
         },
         "advanced": {
-          "exposedTagsEnabled": "",
-          "maxSessionCount": ""
+          "exposedTagsEnabled": false,
+          "maxSessionCount": "",
+          "gdsPushEnabled": false
         }
       },
       "backupConfig": {
@@ -68,38 +50,16 @@ body:json {
           "messageSecurityModes": []
         },
         "authentication": {
-          "anonymousAccessAllowed": "",
+          "anonymousAccessAllowed": false,
           "authenticationProfile": ""
         },
-        "accessControl": {
-          "defaultDeviceRolePermissionMappings": [
-            {
-              "role": "",
-              "permissions": []
-            }
-          ],
-          "defaultTagProviderRolePermissionMappings": [
-            {
-              "role": "",
-              "permissions": []
-            }
-          ],
-          "tagProviderRolePermissionMappings": [
-            {
-              "provider": "",
-              "mapping": {
-                "role": "",
-                "permissions": []
-              }
-            }
-          ]
-        },
         "redundancy": {
-          "readOnlyWhenInactive": ""
+          "readOnlyWhenInactive": false
         },
         "advanced": {
-          "exposedTagsEnabled": "",
-          "maxSessionCount": ""
+          "exposedTagsEnabled": false,
+          "maxSessionCount": "",
+          "gdsPushEnabled": false
         }
       }
     }

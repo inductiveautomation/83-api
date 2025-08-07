@@ -1,0 +1,23 @@
+meta {
+  name: Get Remote Audit Profile Names
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/audit/remote-profiles/:serverId
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}
+
+params:path {
+  serverId: 
+}

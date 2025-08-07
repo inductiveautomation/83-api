@@ -1,0 +1,19 @@
+meta {
+  name: Get Service Connectors Names
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/data/api/v1/resources/names/ignition/service-connector
+  body: none
+  auth: none
+}
+
+params:query {
+  ~limit: 
+  ~offset: 
+  ~sortBy: 
+  ~search: 
+  ~filter: 
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Retrieve agent modules
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{baseUrl}}/data/eam/api/v1/agent-management/modules
+  body: none
+  auth: none
+}
+
+params:query {
+  ~serverid: 
+}

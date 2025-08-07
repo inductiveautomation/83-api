@@ -1,0 +1,28 @@
+meta {
+  name: Create Alarm Notification Profiles
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/data/api/v1/resources/com.inductiveautomation.alarm-notification/alarm-notification-profile
+  body: json
+  auth: none
+}
+
+params:query {
+  ~allowInvalidReferences: 
+}
+
+body:json {
+  [
+    {
+      "name": "",
+      "collection": "",
+      "enabled": false,
+      "description": "",
+      "config": "",
+      "backupConfig": ""
+    }
+  ]
+}

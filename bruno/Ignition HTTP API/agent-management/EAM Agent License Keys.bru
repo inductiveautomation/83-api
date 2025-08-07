@@ -1,0 +1,15 @@
+meta {
+  name: EAM Agent License Keys
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/data/eam/api/v1/agent-licenses/:agentName
+  body: none
+  auth: none
+}
+
+params:path {
+  agentName: 
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Delete Themes Data File
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/data/api/v1/resources/datafile/com.inductiveautomation.perspective/themes/:name/:filename
+  body: none
+  auth: none
+}
+
+params:query {
+  signature: 
+  ~collection: 
+}
+
+params:path {
+  name: 
+  filename: 
+}

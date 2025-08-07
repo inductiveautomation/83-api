@@ -1,0 +1,21 @@
+meta {
+  name: Regenerate Certificate
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/data/opc-ua/api/v1/:routeType/certificate/regenerate
+  body: json
+  auth: none
+}
+
+params:path {
+  routeType: 
+}
+
+body:json {
+  {
+    "validPeriodDays": ""
+  }
+}

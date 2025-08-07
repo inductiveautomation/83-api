@@ -1,0 +1,22 @@
+meta {
+  name: Update Fonts Data File
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/data/api/v1/resources/datafile/com.inductiveautomation.perspective/fonts/:name/:filename
+  body: none
+  auth: none
+}
+
+params:query {
+  signature: 
+  ~collection: 
+  ~rename: 
+}
+
+params:path {
+  name: 
+  filename: 
+}
